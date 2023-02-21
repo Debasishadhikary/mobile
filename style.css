@@ -12,8 +12,21 @@ body {
 }
 a{
     text-decoration: none;
-    color: #fff;
 }
+
+
+/* Reuseable Code */
+.section{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.section_title{
+    padding: .5rem 0rem .5rem .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Navbar Section */
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -27,6 +40,8 @@ a{
 }
 
 
+/* Hero Section */
+
 .hero{
     background: #FF512F;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
@@ -34,12 +49,12 @@ a{
     height: 25vh;
     border-radius: 11px;
     margin: 0rem 1rem 0rem 1rem;
+    color: #fff;
 }
 .hero h3{
     padding: 2.5rem 0rem 0rem .7rem;
-    color: #fff;
 }
-.hero p{
+.hero p a{
     padding: .7rem 0rem 0rem .7rem;
     color: #fff;
 }
@@ -63,7 +78,8 @@ a{
     border-radius: 13px;
     display: inline-block;
     margin-left: -1rem;
-    border: 1px solid grey;
+    border: 1px solid rgb(222, 222, 222);
+    outline-color: transparent;
 }
 
 .catagories{
@@ -72,6 +88,10 @@ a{
     width: 90%;
     padding: 1rem;
 }
+.catagories .catagories_deck{
+    text-align: center;
+    padding-left: 1.7rem;
+}
 .catagories .catagories_deck .catagories_col{
     padding: 2.1rem 0rem 2.5rem 0rem;
     width: 3rem;
@@ -79,6 +99,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 3px 7px 3px rgba(219, 219, 219, 0.5);
 }
 .catagories .catagories_deck .catagories_col .circle{
     width: 59px;
@@ -86,11 +107,35 @@ a{
     background-color: pink;
     position: absolute;
     border-radius: 100%;
-    left: 20px;
+    left: 15px;
     bottom: 41px;
 }
+
 .catagories .catagories_deck .catagories_col img{
     z-index: 1;
     width: 55%;
     margin-top: 1rem;
+}
+
+
+/* Enroll Section */
+
+.enroll{
+    padding-top: 3rem;
+}
+.enroll .enroll_div{
+    display: flex;
+    justify-content: space-between;
+}
+.enroll .enroll_div p{
+    margin-top: 3px;
+}
+
+.enroll .enroll_details .card{
+    width: 50%;
+}
+
+.enroll .enroll_details .card img{
+    max-width: 110px;
+    height: 70px;
 }
