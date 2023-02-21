@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem;
+}
+.nav .view{
+    display: flex;
+}
+.nav .view b{
+    font-weight: 500;
+}
+
+
+.hero{
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 25vh;
+    border-radius: 11px;
+    margin: 0rem 1rem 0rem 1rem;
+}
+.hero h3{
+    padding: 2.5rem 0rem 0rem .7rem;
+    color: #fff;
+}
+.hero p{
+    padding: .7rem 0rem 0rem .7rem;
+    color: #fff;
+}
+.hero img{
+    width: 130px;
+    position: relative;
+    bottom: 7.9rem;
+    left: 11rem;
+}
+.hero .hero_search{
+    margin-top: -7rem;
+    color: gray;
+}
+.hero .hero_search span{
+    position: relative;
+    left: 1.3rem;
+    top: .4rem;
+}
+.hero .hero_search input{
+    padding: 7px 45px;
+    border-radius: 13px;
+    display: inline-block;
+    margin-left: -1rem;
+    border: 1px solid grey;
+}
+
+.catagories{
+    margin-top: 3rem;
+    height: 19vh;
+    width: 90%;
+    padding: 1rem;
+}
+.catagories .catagories_deck .catagories_col{
+    padding: 2.1rem 0rem 2.5rem 0rem;
+    width: 3rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catagories .catagories_deck .catagories_col .circle{
+    width: 59px;
+    height: 59px;
+    background-color: pink;
+    position: absolute;
+    border-radius: 100%;
+    left: 20px;
+    bottom: 41px;
+}
+.catagories .catagories_deck .catagories_col img{
+    z-index: 1;
+    width: 55%;
+    margin-top: 1rem;
+}
